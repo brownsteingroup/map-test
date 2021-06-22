@@ -22,4 +22,4 @@ block content
 
   script(src='javascripts/mapStyles.js')
   script(src='javascripts/map.js')
-  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBx4ltosNbZp1LJpD11PrNb-GKAeG2yuEg&callback=initMap&libraries=&v=weekly')
+  script(src='https://maps.googleapis.com/maps/api/js?key=' + process.env.MAPS_KEY + '&callback=initMap&libraries=&v=weekly')
