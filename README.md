@@ -19,3 +19,15 @@ npm start
 ```
 
 The app should open in your browser. Alternatively, visit http://localhost:3000
+
+## Creation
+
+To make your own Node with Express app, use the following commands:
+
+```sh
+npm install -g express-generator
+express --view=pug app-name
+cd app-name
+npm install
+npm start
+```
