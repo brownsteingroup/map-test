@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+  form(class='signUp' method='post')
+    label(for='address') Address
+    input(type='text' id='address' name='address' required)
+    input(type='text' id='address2' name='address2')
+
+    label(for='city') City
+    input(type='text' id='city' name='city' required)
+
+    label(for='state') State
+    input(type='text' id='state' name='state' required)
+
+    label(for='country') Country
+    input(type='text' id='country' name='country' required)
+
+    input(type='submit')
+
+  div(id='map')
+
+  script(src='javascripts/mapStyles.js')
+  script(src='javascripts/map.js')
+  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBx4ltosNbZp1LJpD11PrNb-GKAeG2yuEg&callback=initMap&libraries=&v=weekly')
